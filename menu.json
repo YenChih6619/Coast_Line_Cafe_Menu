@@ -1,14 +1,17 @@
 [
-  {
-    "id": 1, "section": "A", "series": "【 老闆自己喝的 】", "name": "衣索比亞 果丁丁", "process": "天使處理廠-藝妓-日曬", "roast": "淺焙", "method": "日曬", "flavor": "甜橙香氣、百香果、蘋果、檸檬、紅糖。", "price_ear": "450/盒", "price_half": "600", "price_one": "1100", "price_cup": 180
-  },
-  {
-    "id": 2, "section": "A", "series": "【 老闆自己喝的 】", "name": "衣索比亞 谷吉", "process": "芭絲特藝妓-高山水洗", "roast": "淺焙", "method": "水洗", "flavor": "紫羅蘭、白葡萄、柳丁果汁感、檸檬、柚子尾韻。", "price_ear": "450/盒", "price_half": "600", "price_one": "1100", "price_cup": 180
-  },
-  {
-    "id": 3, "section": "B", "series": "【 精選系列 】", "name": "瓜地馬拉 安提瓜", "process": "瑪雅處理廠-水洗", "roast": "中焙", "method": "水洗", "flavor": "柑橘、烏龍茶、巧克力牛奶糖、飽滿厚實。", "price_ear": "380/盒", "price_half": "450", "price_one": "800", "price_cup": 160
-  },
-  {
-    "id": 4, "section": "C", "series": "【 精選系列 】", "name": "哥倫比亞 納里尼奧", "process": "卡杜拉-水洗", "roast": "中深焙", "method": "水洗", "flavor": "水果感、櫻桃漿果酸香、飽滿巧克力焦糖。", "price_ear": "380/盒", "price_half": "420", "price_one": "800", "price_cup": 140
-  }
+  { "id": 1, "section": "A", "series": "【 老闆自己喝的 】", "name": "衣索比亞 果丁丁", "process": "天使處理廠-藝妓-日曬", "roast": "淺焙", "method": "日曬", "flavor": "甜橙香氣、百香果、蘋果、檸檬、紅糖。", "price_ear": "450/盒", "price_half": "600", "price_one": "1100", "price_cup": 180 },
+  { "id": 2, "section": "A", "series": "【 老闆自己喝的 】", "name": "衣索比亞 谷吉", "process": "芭絲特藝妓-高山水洗", "roast": "淺焙", "method": "水洗", "flavor": "紫羅蘭、白葡萄、柳丁果汁感、檸檬、柚子尾韻。", "price_ear": "450/盒", "price_half": "600", "price_one": "1100", "price_cup": 180 },
+  { "id": 3, "section": "A", "series": "【 老闆自己喝的 】", "name": "哥斯大黎加 卡內特", "process": "音樂家系列-莫札特", "roast": "淺中焙", "method": "蜜處理", "flavor": "玫瑰蜜香、草莓、明顯葡萄紅酒香、果汁高甜感。", "price_ear": "450/盒", "price_half": "700", "price_one": "1300", "price_cup": 180 },
+  { "id": 4, "section": "A", "series": "【 老闆自己喝的 】", "name": "哥倫比亞 娜玲瓏", "process": "花境處理站-藝妓-水洗", "roast": "淺焙", "method": "水洗", "flavor": "青檸、白花香、白桃甜感、百香果酸甜茶感尾韻。", "price_ear": "450/盒", "price_half": "700", "price_one": "1300", "price_cup": 180 },
+  { "id": 5, "section": "A", "series": "【 老闆自己喝的 】", "name": "哥倫比亞 蕙蘭", "process": "水果拼盤-百香果水洗", "roast": "淺中焙", "method": "特殊水洗", "flavor": "百香果、葡萄乾、炭燒桂圓香甜感。", "price_ear": "450/盒", "price_half": "700", "price_one": "1300", "price_cup": 180 },
+  { "id": 6, "section": "B", "series": "【 精選系列 】", "name": "衣索比亞 翰馬修村", "process": "莓果炸彈-日曬", "roast": "淺焙", "method": "日曬", "flavor": "明顯草莓果醬風味、甜桃、芒果熟果甜、飽滿乾淨。", "price_ear": "380/盒", "price_half": "500", "price_one": "900", "price_cup": 160 },
+  { "id": 7, "section": "B", "series": "【 精選系列 】", "name": "瓜地馬拉 安提瓜", "process": "瑪雅處理廠-水洗-波旁", "roast": "中焙", "method": "水洗", "flavor": "柑橘、烏龍茶、巧克力牛奶糖、飽滿厚實。", "price_ear": "380/盒", "price_half": "450", "price_one": "800", "price_cup": 160 },
+  { "id": 8, "section": "B", "series": "【 精選系列 】", "name": "新幾內亞 天堂鳥", "process": "天堂鳥莊園-A18-水洗", "roast": "中焙", "method": "水洗", "flavor": "柑橘、黑李、堅果、巧克力、奶油感。", "price_ear": "380/盒", "price_half": "450", "price_one": "800", "price_cup": 160 },
+  { "id": 9, "section": "B", "series": "【 精選系列 】", "name": "衣索比亞 伊迪朵", "process": "沁甜白菊-水洗", "roast": "淺焙", "method": "水洗", "flavor": "白花香、香水檸檬、麝香葡萄、大吉嶺紅茶。", "price_ear": "380/盒", "price_half": "500", "price_one": "900", "price_cup": 160 },
+  { "id": 10, "section": "B", "series": "【 精選系列 】", "name": "哥斯大黎加 聖羅蔓", "process": "蜂鳥-酵素水洗", "roast": "淺焙", "method": "特殊水洗", "flavor": "鳳梨、葡萄、柑橘香氣、巧克力堅果高甜感。", "price_ear": "380/盒", "price_half": "500", "price_one": "900", "price_cup": 140 },
+  { "id": 11, "section": "C", "series": "【 精選系列 】", "name": "哥倫比亞 納里尼奧", "process": "卡杜拉-水洗", "roast": "中深焙", "method": "水洗", "flavor": "水果感、櫻桃漿果酸香、飽滿巧克力、焦糖甜感。", "price_ear": "380/盒", "price_half": "420", "price_one": "800", "price_cup": 140 },
+  { "id": 12, "section": "C", "series": "【 精選系列 】", "name": "肯亞 卡慕旺吉", "process": "TOP-AA-PB-水洗", "roast": "中深焙", "method": "水洗", "flavor": "黑莓香氣、番茄梅酸甜、紅糖、口感厚實。", "price_ear": "380/盒", "price_half": "500", "price_one": "900", "price_cup": 140 },
+  { "id": 13, "section": "C", "series": "【 海線配方 】", "name": "義式配方-酒心巧克力", "process": "House Blend", "roast": "中深焙", "method": "配方豆", "flavor": "堅果奶油、紅酒香、巧克力濃郁口感，拿鐵推薦。", "price_ear": "380/盒", "price_half": "400", "price_one": "750", "price_cup": 140 },
+  { "id": 14, "section": "C", "series": "【 精選系列 】", "name": "盧安達 亞瑪雪克", "process": "尤加利處理廠-水洗", "roast": "中深焙", "method": "水洗", "flavor": "烏梅、橙皮、草本、香料、蔗糖甜感。", "price_ear": "380/盒", "price_half": "420", "price_one": "800", "price_cup": 140 },
+  { "id": 15, "section": "C", "series": "【 精選系列 】", "name": "哥斯大黎加 布蘭卡", "process": "芒果莊園-黑蜜", "roast": "中焙", "method": "蜜處理", "flavor": "熱帶熟果香、黑李蜜餞、巧克力、堅果奶油糖。", "price_ear": "380/盒", "price_half": "450", "price_one": "800", "price_cup": 140 }
 ]
