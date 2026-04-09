@@ -3,84 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE BISTRO | 質感手作料理</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    
+    <title>海線咖啡工作室 | 3月豆單更新</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="bg-decoration"></div>
+    <nav class="top-nav animate__animated animate__fadeInDown">
+        <div class="nav-container">
+            <a href="#section-a" class="nav-link">A 區</a>
+            <a href="#section-b" class="nav-link">B 區</a>
+            <a href="#section-c" class="nav-link">C 區</a>
+        </div>
+    </nav>
 
-    <div class="container">
-        <header class="animate__animated animate__fadeIn">
-            <p class="brand-est">EST. 2024</p>
-            <h1>THE BISTRO</h1>
+    <div class="main-container">
+        
+        <header class="main-header animate__animated animate__fadeIn">
+            <img src="logo.png" alt="海線咖啡工作室 LOGO" class="shop-logo">
             <div class="divider"></div>
-            <p class="subtitle">Seasonal Tasting Menu</p>
+            <p class="menu-date">3月豆單更新</p>
         </header>
 
-        <nav class="menu-nav animate__animated animate__fadeIn animate__delay-1s">
-            <a href="#appetizers">前菜</a>
-            <a href="#mains">主食</a>
-            <a href="#drinks">飲品</a>
-        </nav>
-
-        <section id="appetizers" class="menu-section animate__animated animate__fadeInUp">
-            <h2 class="section-title">Appetizers</h2>
-            
+        <section id="section-a" class="menu-section">
+            <h2 class="section-title animate__animated animate__fadeInUp"><span>A.</span> 區</h2>
             <div class="menu-grid">
-                <div class="menu-card">
-                    <div class="card-header">
-                        <span class="item-name">松露野菇濃湯</span>
-                        <span class="item-price">280</span>
+                
+                <div class="coffee-card animate__animated animate__fadeInUp">
+                    <div class="card-body">
+                        <p class="series">【 老闆的咖啡席 】</p>
+                        <p class="desc">任選兩款咖啡豆，加上一杯義式品項，讓你一次咖啡大滿足。</p>
+                        <p class="special-note">(純手沖隨意出杯:300元)</p>
                     </div>
-                    <p class="item-desc">嚴選新鮮野菇、現刨黑松露、絲滑鮮奶油</p>
+                    <div class="price-tag-large">400元</div>
                 </div>
 
-                <div class="menu-card">
+                <div class="coffee-card animate__animated animate__fadeInUp">
                     <div class="card-header">
-                        <span class="item-name">布拉塔起司沙拉</span>
-                        <span class="item-price">420</span>
+                        <p class="series">【 老闆自己喝的 】</p>
+                        <h3 class="coffee-name">衣索比亞 果丁丁</h3>
+                        <p class="process">天使處理廠-藝妓-日曬處理</p>
                     </div>
-                    <p class="item-desc">義大利布拉塔起司、彩色小番茄、羅勒油</p>
+                    <div class="card-details"><span>淺焙</span><span>日曬處理</span></div>
+                    <p class="flavor">風味：甜橙香氣、百香果、蘋果、檸檬、紅糖。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:450/盒</span><span>單杯:180</span></div>
+                        <div class="price-row"><span>半磅:600</span><span class="promo">一磅特惠:1100</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card animate__animated animate__fadeInUp">
+                    <div class="card-header">
+                        <p class="series">【 老闆自己喝的 】</p>
+                        <h3 class="coffee-name">衣索比亞 谷吉</h3>
+                        <p class="process">芭絲特藝妓-高山水洗</p>
+                    </div>
+                    <div class="card-details"><span>淺焙</span><span>水洗</span></div>
+                    <p class="flavor">風味：紫羅蘭、白葡萄、柳丁果汁感、檸檬、柚子尾韻，明顯茶感。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:450/盒</span><span>單杯:180</span></div>
+                        <div class="price-row"><span>半磅:600</span><span class="promo">一磅特惠:1100</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card animate__animated animate__fadeInUp">
+                    <div class="card-header">
+                        <p class="series">【 老闆自己喝的 】</p>
+                        <h3 class="coffee-name">哥斯大黎加 卡內特</h3>
+                        <p class="process">音樂家系列-莫札特</p>
+                    </div>
+                    <div class="card-details"><span>淺中焙</span><span>葡萄乾蜜處理</span></div>
+                    <p class="flavor">風味：玫瑰蜜香氣、草莓、明顯葡萄紅酒香氣，果汁高甜感。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:450/盒</span><span>單杯:180</span></div>
+                        <div class="price-row"><span>半磅:700</span><span class="promo">一磅特惠:1300</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card animate__animated animate__fadeInUp">
+                    <div class="card-header">
+                        <p class="series">【 老闆自己喝的 】</p>
+                        <h3 class="coffee-name">哥倫比亞 娜玲瓏</h3>
+                        <p class="process">花境處理站-藝妓-水洗</p>
+                    </div>
+                    <div class="card-details"><span>淺焙</span><span>水洗</span></div>
+                    <p class="flavor">風味：青檸檬與白花的香氣，檸檬草風味和白桃甜感，百香果酸甜茶感尾韻。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:450/盒</span><span>單杯:180</span></div>
+                        <div class="price-row"><span>半磅:700</span><span class="promo">一磅特惠:1300</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card animate__animated animate__fadeInUp">
+                    <div class="card-header">
+                        <p class="series">【 老闆自己喝的 】</p>
+                        <h3 class="coffee-name">哥倫比亞 蕙蘭</h3>
+                        <p class="process">水果拼盤-【百香果水洗】</p>
+                    </div>
+                    <div class="card-details"><span>淺中焙</span><span>百香果水洗處理</span></div>
+                    <p class="flavor">風味：百香果、葡萄乾、炭燒桂圓香甜感。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:450/盒</span><span>單杯:180</span></div>
+                        <div class="price-row"><span>半磅:700</span><span class="promo">一磅特惠:1300</span></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="mains" class="menu-section animate__animated animate__fadeInUp">
-            <h2 class="section-title">Main Course</h2>
-            
+        <section id="section-b" class="menu-section">
+            <h2 class="section-title"><span>B.</span> 區</h2>
             <div class="menu-grid">
-                <div class="menu-card highlighted">
+                <div class="coffee-card">
                     <div class="card-header">
-                        <span class="item-name">熟成肋眼牛排</span>
-                        <span class="item-price">1,280</span>
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">衣索比亞 翰馬修村</h3>
+                        <p class="process">「莓果炸彈」-日曬</p>
                     </div>
-                    <p class="item-desc">10oz Prime等級、蒜球、迷迭香、海鹽</p>
-                    <span class="tag">推薦</span>
+                    <div class="card-details"><span>淺焙</span><span>日曬</span></div>
+                    <p class="flavor">風味：明顯草莓果醬風味，甜桃、芒果熟果甜感，明亮果酸甜感厚實飽滿乾淨。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:160</span></div>
+                        <div class="price-row"><span>半磅:500</span><span class="promo">一磅特惠:900</span></div>
+                    </div>
                 </div>
 
-                <div class="menu-card">
+                <div class="coffee-card">
                     <div class="card-header">
-                        <span class="item-name">香煎干貝海鮮麵</span>
-                        <span class="item-price">580</span>
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">瓜地馬拉 安提瓜</h3>
+                        <p class="process">瑪雅處理廠-水洗-波旁種</p>
                     </div>
-                    <p class="item-desc">北海道生食級干貝、透抽、自製蝦油細扁麵</p>
+                    <div class="card-details"><span>中焙</span><span>水洗</span></div>
+                    <p class="flavor">風味：柑橘、烏龍茶、巧克力牛奶糖、飽滿厚實。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:160</span></div>
+                        <div class="price-row"><span>半磅:450</span><span class="promo">一磅特惠:800</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card">
+                    <div class="card-header">
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">新幾內亞 天堂鳥莊園</h3>
+                        <p class="process">A18-水洗</p>
+                    </div>
+                    <div class="card-details"><span>中焙</span><span>水洗</span></div>
+                    <p class="flavor">風味：柑橘、黑李、堅果、巧克力、奶油。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:160</span></div>
+                        <div class="price-row"><span>半磅:450</span><span class="promo">一磅特惠:800</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card">
+                    <div class="card-header">
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">衣索比亞 伊迪朵</h3>
+                        <p class="process">「沁甜白菊」-水洗</p>
+                    </div>
+                    <div class="card-details"><span>淺焙</span><span>水洗</span></div>
+                    <p class="flavor">風味：白花香、香水檸檬、麝香葡萄、大吉嶺紅茶。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:160</span></div>
+                        <div class="price-row"><span>半磅:500</span><span class="promo">一磅特惠:900</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card">
+                    <div class="card-header">
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">哥斯大黎加 聖羅蔓處理廠</h3>
+                        <p class="process">蜂鳥 酵素水洗</p>
+                    </div>
+                    <div class="card-details"><span>淺焙</span><span>酵素水洗</span></div>
+                    <p class="flavor">風味：鳳梨、葡萄、柑橘香氣，巧克力、堅果高甜感。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:140</span></div>
+                        <div class="price-row"><span>半磅:500</span><span class="promo">一磅特惠:900</span></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <footer>
-            <p>價格均以新台幣計算，需另收 10% 服務費</p>
-            <p>台北市某某區某某路 123 號 | 02-1234-5678</p>
-            <div class="social-icons">
+        <section id="section-c" class="menu-section">
+            <h2 class="section-title"><span>C.</span> 區</h2>
+            <div class="menu-grid">
+                <div class="coffee-card">
+                    <div class="card-header">
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">哥倫比亞 納里尼奧省</h3>
+                        <p class="process">卡杜拉-水洗</p>
+                    </div>
+                    <div class="card-details"><span>中深焙</span><span>水洗</span></div>
+                    <p class="flavor">風味：水果感、櫻桃漿果酸香、飽滿巧克力、焦糖甜感。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:140</span></div>
+                        <div class="price-row"><span>半磅:420</span><span class="promo">一磅特惠:800</span></div>
+                    </div>
                 </div>
+
+                <div class="coffee-card">
+                    <div class="card-header">
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">肯亞 卡慕旺吉</h3>
+                        <p class="process">TOP-AA-PB-水洗</p>
+                    </div>
+                    <div class="card-details"><span>中深焙</span><span>水洗</span></div>
+                    <p class="flavor">風味：黑莓香氣、番茄梅酸甜、紅糖香氣、口感厚實。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:140</span></div>
+                        <div class="price-row"><span>半磅:500</span><span class="promo">一磅特惠:900</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card">
+                    <div class="card-header">
+                        <p class="series">【 海線配方 】</p>
+                        <h3 class="coffee-name">義式配方</h3>
+                        <p class="process">酒心巧克力</p>
+                    </div>
+                    <div class="card-details"><span>中深焙</span></div>
+                    <p class="flavor">風味：堅果奶油和紅酒香氣，巧克力濃口感，做成拿鐵就是一杯香氣和口感兼備的咖啡。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:140</span></div>
+                        <div class="price-row"><span>半磅:400</span><span class="promo">一磅特惠:750</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card">
+                    <div class="card-header">
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">盧安達 亞瑪雪克</h3>
+                        <p class="process">尤加利處理廠-水洗</p>
+                    </div>
+                    <div class="card-details"><span>中深焙</span><span>水洗</span></div>
+                    <p class="flavor">風味：烏梅、橙皮、草本、香料、蔗糖甜感。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:140</span></div>
+                        <div class="price-row"><span>半磅:420</span><span class="promo">一磅特惠:800</span></div>
+                    </div>
+                </div>
+
+                <div class="coffee-card">
+                    <div class="card-header">
+                        <p class="series">【 精選系列 】</p>
+                        <h3 class="coffee-name">哥斯大黎加 布蘭卡</h3>
+                        <p class="process">芒果莊園-黑蜜</p>
+                    </div>
+                    <div class="card-details"><span>中焙</span><span>黑蜜處理</span></div>
+                    <p class="flavor">風味：熱帶熟果香氣、黑李蜜餞、巧克力、堅果奶油糖。</p>
+                    <div class="price-box">
+                        <div class="price-row"><span>耳掛:380/盒</span><span>單杯:140</span></div>
+                        <div class="price-row"><span>半磅:450</span><span class="promo">一磅特惠:800</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>© 海線咖啡工作室 coast_line_cafe</p>
+            <p>Life Hard, Live Serious.</p>
         </footer>
     </div>
-
 </body>
 </html>
