@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1, "section": "A", "series": "【 老闆自己喝的 】", "name": "衣索比亞 果丁丁", "process": "天使處理廠-藝妓-日曬", "roast": "淺焙", "method": "日曬", "flavor": "甜橙香氣、百香果、蘋果、檸檬、紅糖。", "price_ear": "450/盒", "price_half": "600", "price_one": "1100", "price_cup": 180
+  },
+  {
+    "id": 2, "section": "A", "series": "【 老闆自己喝的 】", "name": "衣索比亞 谷吉", "process": "芭絲特藝妓-高山水洗", "roast": "淺焙", "method": "水洗", "flavor": "紫羅蘭、白葡萄、柳丁果汁感、檸檬、柚子尾韻。", "price_ear": "450/盒", "price_half": "600", "price_one": "1100", "price_cup": 180
+  },
+  {
+    "id": 3, "section": "B", "series": "【 精選系列 】", "name": "瓜地馬拉 安提瓜", "process": "瑪雅處理廠-水洗", "roast": "中焙", "method": "水洗", "flavor": "柑橘、烏龍茶、巧克力牛奶糖、飽滿厚實。", "price_ear": "380/盒", "price_half": "450", "price_one": "800", "price_cup": 160
+  },
+  {
+    "id": 4, "section": "C", "series": "【 精選系列 】", "name": "哥倫比亞 納里尼奧", "process": "卡杜拉-水洗", "roast": "中深焙", "method": "水洗", "flavor": "水果感、櫻桃漿果酸香、飽滿巧克力焦糖。", "price_ear": "380/盒", "price_half": "420", "price_one": "800", "price_cup": 140
+  }
+]
