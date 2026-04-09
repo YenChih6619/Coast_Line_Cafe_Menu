@@ -1,91 +1,95 @@
 :root {
-    --bg-dark: #0a0a0a;
-    --primary-red: #4A101A; /* LOGO深紅 */
-    --accent-gold: #bc9c6c; /* 金色 */
-    --text-cream: #f5f5f5;
-    --card-bg: rgba(255, 255, 255, 0.05);
+    --bg-black: #080808;
+    --card-bg: rgba(255, 255, 255, 0.04);
+    --accent-gold: #bc9c6c;
+    --primary-red: #4A101A;
+    --text-main: #f5f5f5;
+    --text-dim: #999;
 }
 
-* { 
-    -webkit-tap-highlight-color: transparent; 
-    box-sizing: border-box; 
-    margin: 0; padding: 0; 
-}
-
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+* { -webkit-tap-highlight-color: transparent; box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    background-color: var(--bg-dark);
-    /* 淡淡的防波堤紋理 (由 SVG 產生) */
+    background-color: var(--bg-black);
     background-image: radial-gradient(circle at 2px 2px, rgba(188, 156, 108, 0.05) 1px, transparent 0);
-    background-size: 30px 30px;
-    color: var(--text-cream);
+    background-size: 40px 40px;
+    color: var(--text-main);
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.6;
 }
 
-/* 導航欄手機優化 */
+/* 頂部搜尋列 */
 .top-nav {
     position: fixed; top: 0; width: 100%;
-    background: rgba(10, 10, 10, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(8, 8, 8, 0.9);
+    backdrop-filter: blur(15px);
     z-index: 1000;
+    padding: 12px 16px;
     border-bottom: 1px solid rgba(188, 156, 108, 0.2);
 }
 
-.nav-container { display: flex; justify-content: space-around; padding: 15px 0; }
-.nav-link { 
-    text-decoration: none; color: var(--text-cream); font-weight: 700; 
-    padding: 5px 15px; font-family: 'Playfair Display', serif;
+.search-bar-container { max-width: 600px; margin: 0 auto; }
+#searchInput {
+    width: 100%;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid var(--accent-gold);
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
 }
 
-/* 頁首設計 */
+/* 內容容器 */
 .main-container { max-width: 900px; margin: 0 auto; padding: 100px 16px 40px; }
-.main-header { text-align: center; margin-bottom: 60px; }
-.shop-logo { width: 220px; height: auto; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); }
-.divider { width: 50px; height: 3px; background: var(--accent-gold); margin: 0 auto 20px; box-shadow: 0 0 10px var(--accent-gold); }
-.menu-date { font-size: 0.9rem; letter-spacing: 5px; color: var(--accent-gold); }
 
-/* 分區標題 */
-.section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center; margin-bottom: 40px; }
+.main-header { text-align: center; margin-bottom: 50px; }
+.shop-logo { width: 200px; height: auto; margin-bottom: 15px; }
+.divider { width: 40px; height: 3px; background: var(--accent-gold); margin: 15px auto; }
+.menu-date { font-size: 0.85rem; letter-spacing: 5px; color: var(--accent-gold); text-transform: uppercase; }
+
+/* 區段與標題 */
+.menu-section { margin-bottom: 60px; }
+.section-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; text-align: center; margin-bottom: 30px; }
 .section-title span { color: var(--accent-gold); }
 
-/* 網格系統：手機單欄，平板以上雙欄 */
+/* 網格系統 */
 .menu-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 768px) { .menu-grid { grid-template-columns: 1fr 1fr; } }
 
-/* 卡片設計 */
+/* 咖啡卡片 */
 .coffee-card {
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 25px;
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .coffee-card:active { transform: scale(0.98); background: rgba(255, 255, 255, 0.08); }
 
 .cup-price {
     position: absolute; top: 20px; right: 20px;
-    background: var(--primary-red); color: white;
-    font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 4px;
+    background: var(--primary-red); color: #fff;
+    font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px;
 }
 
 .series { font-size: 0.75rem; color: var(--accent-gold); margin-bottom: 8px; font-weight: 700; letter-spacing: 1px; }
-.coffee-name { font-size: 1.4rem; color: #fff; margin-bottom: 5px; }
-.process { font-size: 0.9rem; color: #888; margin-bottom: 12px; }
-.card-details { display: flex; gap: 10px; margin-bottom: 15px; }
-.card-details span { background: rgba(255,255,255,0.05); color: #aaa; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; }
-.flavor { font-size: 0.95rem; color: #ccc; margin-bottom: 25px; height: 3em; }
+.coffee-name { font-size: 1.35rem; color: #fff; margin-bottom: 4px; }
+.process { font-size: 0.9rem; color: #888; margin-bottom: 15px; }
 
-/* 價格區塊 */
-.price-box { border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 15px; }
-.price-row { display: flex; justify-content: space-between; font-size: 0.9rem; color: #999; margin-bottom: 5px; }
-.price-row.promo { color: var(--accent-gold); font-weight: 700; border-top: 1px solid rgba(188, 156, 108, 0.1); padding-top: 5px; margin-top: 5px; }
+.card-details { display: flex; gap: 8px; margin-bottom: 15px; }
+.card-details span { background: rgba(188, 156, 108, 0.1); color: var(--accent-gold); font-size: 0.75rem; padding: 2px 10px; border-radius: 4px; border: 1px solid rgba(188, 156, 108, 0.2); }
 
-/* A區特殊卡片 */
-.price-tag-large { font-size: 2.5rem; text-align: center; color: var(--accent-gold); font-family: 'Playfair Display', serif; margin: 20px 0; }
-.special-note { text-align: center; font-size: 0.8rem; color: #777; font-style: italic; }
+.flavor { font-size: 0.95rem; color: #ccc; margin-bottom: 25px; min-height: 2.8em; }
 
-.main-footer { text-align: center; padding: 60px 0; border-top: 1px solid rgba(255,255,255,0.05); color: #555; font-size: 0.8rem; line-height: 2; }
+/* 價格 */
+.price-box { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 15px; }
+.price-row { display: flex; justify-content: space-between; font-size: 0.9rem; color: #aaa; margin-bottom: 5px; }
+.promo { color: var(--accent-gold); font-weight: 700; padding-top: 5px; margin-top: 5px; border-top: 1px dashed rgba(188, 156, 108, 0.2); }
+
+/* 頁尾 */
+.main-footer { text-align: center; padding: 60px 0; color: #555; font-size: 0.8rem; line-height: 2; border-top: 1px solid rgba(255,255,255,0.05); }
+
+.loader, .no-result { text-align: center; padding: 100px 0; color: var(--accent-gold); }
