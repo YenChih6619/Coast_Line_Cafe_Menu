@@ -3,46 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>海線咖啡 | 智慧搜尋豆單</title>
+    <title>海線咖啡工作室 | 數位豆單</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="top-nav">
-        <div class="nav-container">
-            <input type="text" id="searchInput" placeholder="搜尋：中深焙、水洗、品名...">
+        <div class="search-bar-container">
+            <input type="text" id="searchInput" placeholder="搜尋：中深焙、水洗、風味...">
         </div>
     </nav>
 
     <div class="main-container">
         <header class="main-header">
-            <img src="logo.png" alt="海線咖啡" class="shop-logo">
+            <img src="logo.png" alt="海線咖啡 LOGO" class="shop-logo">
             <div class="divider"></div>
-            <p class="menu-date">智能豆單查詢系統</p>
+            <p class="menu-date">3月豆單現貨供應</p>
         </header>
 
         <div id="menuContent">
-            <div class="loading">豆單讀取中...</div>
+            <div class="loader">讀取精品豆單中...</div>
         </div>
+
+        <footer class="main-footer">
+            <p>© 海線咖啡工作室 coast_line_cafe</p>
+            <p>Life Hard, Live Serious.</p>
+        </footer>
     </div>
 
     <script>
         let coffeeData = [];
 
-        // 從 JSON 檔案載入資料
         async function fetchMenu() {
             try {
                 const response = await fetch('menu.json');
                 coffeeData = await response.json();
                 renderMenu(coffeeData);
-            } catch (error) {
-                console.error("無法載入豆單資料:", error);
-                document.getElementById('menuContent').innerHTML = "資料載入失敗，請稍後再試。";
+            } catch (e) {
+                document.getElementById('menuContent').innerHTML = '<p style="text-align:center">載入失敗，請檢查 JSON 檔案是否上傳。</p>';
             }
         }
 
-        // 渲染畫面
         function renderMenu(data) {
             const content = document.getElementById('menuContent');
             if (data.length === 0) {
@@ -50,49 +52,47 @@
                 return;
             }
 
-            // 按 A, B, C 區分組
-            const sections = ['A', 'B', 'C'];
+            const sections = [...new Set(data.map(item => item.section))].sort();
             let html = '';
 
             sections.forEach(sec => {
                 const items = data.filter(item => item.section === sec);
-                if (items.length > 0) {
-                    html += `<section class="menu-section">
-                                <h2 class="section-title"><span>${sec}.</span> 區</h2>
-                                <div class="menu-grid">
-                                    ${items.map(item => `
-                                        <div class="coffee-card animate-in">
-                                            <span class="cup-price">單杯:${item.price_cup}</span>
-                                            <p class="series">${item.series}</p>
-                                            <h3 class="coffee-name">${item.name}</h3>
-                                            <p class="process">${item.process}</p>
-                                            <div class="card-details">
-                                                <span>${item.roast}</span>
-                                                <span>${item.method}</span>
-                                            </div>
-                                            <p class="flavor">風味：${item.flavor}</p>
-                                            <div class="price-box">
-                                                <div class="price-row"><span>耳掛</span><span>${item.price_ear}</span></div>
-                                                <div class="price-row"><span>半磅</span><span>${item.price_half}</span></div>
-                                                <div class="price-row promo"><span>一磅</span><span>特惠:${item.price_one}</span></div>
-                                            </div>
-                                        </div>
-                                    `).join('')}
+                html += `
+                    <section class="menu-section">
+                        <h2 class="section-title"><span>${sec}.</span> 區</h2>
+                        <div class="menu-grid">
+                            ${items.map(item => `
+                                <div class="coffee-card">
+                                    <span class="cup-price">單杯:${item.price_cup}</span>
+                                    <p class="series">${item.series}</p>
+                                    <h3 class="coffee-name">${item.name}</h3>
+                                    <p class="process">${item.process}</p>
+                                    <div class="card-details">
+                                        <span>${item.roast}</span>
+                                        <span>${item.method}</span>
+                                    </div>
+                                    <p class="flavor">風味：${item.flavor}</p>
+                                    <div class="price-box">
+                                        <div class="price-row"><span>耳掛</span><span>${item.price_ear}</span></div>
+                                        <div class="price-row"><span>半磅</span><span>${item.price_half}</span></div>
+                                        <div class="price-row promo"><span>一磅</span><span>特惠:${item.price_one}</span></div>
+                                    </div>
                                 </div>
-                             </section>`;
-                }
+                            `).join('')}
+                        </div>
+                    </section>
+                `;
             });
             content.innerHTML = html;
         }
 
-        // 搜尋功能
         document.getElementById('searchInput').addEventListener('input', (e) => {
-            const keyword = e.target.value.toLowerCase();
-            const filtered = coffeeData.filter(item => 
-                item.name.toLowerCase().includes(keyword) || 
-                item.roast.toLowerCase().includes(keyword) || 
-                item.method.toLowerCase().includes(keyword) ||
-                item.flavor.toLowerCase().includes(keyword)
+            const k = e.target.value.toLowerCase();
+            const filtered = coffeeData.filter(i => 
+                i.name.toLowerCase().includes(k) || 
+                i.roast.toLowerCase().includes(k) || 
+                i.method.toLowerCase().includes(k) || 
+                i.flavor.toLowerCase().includes(k)
             );
             renderMenu(filtered);
         });
